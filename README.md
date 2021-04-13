@@ -16,7 +16,8 @@ At the end of a neural network classifier, you’ll get a vector of “raw outpu
 We convert a classifier’s raw output values into probabilities using either a sigmoid function or a softmax function.
 
 
-### Applying SoftMax normalization versus Platt Scaling} These scores can be used for ranking test images according to their likeliness to contain a given target concept (search task) or for ranking target concepts according to their likeliness to be visible in a given image (classification task). 
+### Applying SoftMax normalization versus Platt Scaling
+These scores can be used for ranking test images according to their likeliness to contain a given target concept (search task) or for ranking target concepts according to their likeliness to be visible in a given image (classification task). 
 
 ## Evaluating Calibration 
 In order to rectify the problem of the uncertainty of model, these works resulted in two common ways of measuring calibration: reliability diagrams [17] and estimates of the squared expected calibration error (ECE)[17].

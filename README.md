@@ -2,6 +2,8 @@
 # probability-calibration Python Library
 Sample × Category Probability Calibration with Two Dimensions (ProbCalib2D)
 
+https://pypi.org/project/probability-calibration/
+
 This repository contains library code (Calibration Folder) to evaluate calibration and to measure the calibration error of models, including confidence intervals, models outcome probability give more information, not traditionally measure on model's accuracy. Generally, calibration is a pos-processing way to take an existing model and correct its uncertainties to make them more reliable and trustworthy.
 
 ## Problem Setting
@@ -12,13 +14,14 @@ Deep Convolutional Neural Networks have achieved very good performance in text o
 ```
 pip install probability-calibration
 ```
-https://pypi.org/project/probability-calibration/
 
-### Usage(examples)
+### Usage Examples
 ```
 import Calibration
 Calibration.output()
 ```
+More functions are being constructed.
+
 ### Multi-label vs. Multi-class Classification
 **Multi-label**: In the complete and “non-exclusive”,  or multi-label setting,  zero,one or more categories can be associated to a given sample (e.g., Pascal VOC [3]). The labelvector associated to a given sample is still a binary one but does not necessarily correspond toany one-hot encoding
 
@@ -38,7 +41,7 @@ We convert a classifier’s raw output values into probabilities using either a 
 ### Applying SoftMax normalization versus Platt Scaling
 Is Platt scaling can well calibrated? For anwsering this question, we are going to take Softmax to compare methods like Platt scaling. These scores can be used for ranking test images according to their likeliness to contain a given target concept (search task) or for ranking target concepts according to their likeliness to be visible in a given image (classification task). 
 
-## Evaluating Calibration 
+## Evaluating Calibration (Visualization)
 In order to rectify the problem of the uncertainty of model, these works resulted in two common ways of measuring calibration: reliability diagrams [17] and estimates of the squared expected calibration error (ECE)[17].
 
 Both tasks are usually evaluated with different metrics. In the multi-class setting, the classification performance is generally evaluated using the top-N accuracy, usually with N = 1.
